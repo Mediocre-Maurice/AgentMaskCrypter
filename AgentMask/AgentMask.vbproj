@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{459331DC-A9A1-42FE-83D9-8BEC06D59E6D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AgentMask_Crypter.My.MyApplication</StartupObject>
+    <RootNamespace>AgentMask_Crypter</RootNamespace>
+    <AssemblyName>AgentMask Crypter</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AgentMask Crypter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AgentMask Crypter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1_DvxOW-53r9rT2ImLqsz2uw.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="IconExtractor">
+      <HintPath>..\IconExtractor.dll</HintPath>
+    </Reference>
+    <Reference Include="ObfuscationStub">
+      <HintPath>..\ObfuscationStub\ObfuscationStub\ObfuscationStub\bin\Debug\ObfuscationStub.dll</HintPath>
+    </Reference>
+    <Reference Include="SkinSoft.VisualStyler, Version=2.4.0.0, Culture=neutral, PublicKeyToken=0fda9f423e1d9830, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Zeroit.Framework.BarProgressThematic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.BarProgressThematic.1.0.0\lib\Zeroit.Framework.BarProgressThematic.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.BasicCharts, Version=1.0.7032.30510, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.BasicCharts.1.0.0\lib\Zeroit.Framework.BasicCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.Button, Version=1.0.7032.31637, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.Button.1.0.0\lib\Zeroit.Framework.Button.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.ButtonThematic, Version=1.0.7032.33577, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.ButtonThematic.1.0.0\lib\Zeroit.Framework.ButtonThematic.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.CheckBoxThematic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.CheckBoxThematic.1.0.0\lib\Zeroit.Framework.CheckBoxThematic.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.CodeTextBox, Version=1.0.7033.7890, Culture=neutral, PublicKeyToken=fb8aa12b994ef61b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.CodeTextBox.1.0.0\lib\Zeroit.Framework.CodeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.Component, Version=1.0.7033.9537, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.Component.1.0.0\lib\Zeroit.Framework.Component.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.Form, Version=1.0.7033.12348, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.Form.1.0.0\lib\Zeroit.Framework.Form.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.FormEditors, Version=1.0.7033.14697, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.FormEditors.1.0.0\lib\Zeroit.Framework.FormEditors.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.Gauges, Version=1.0.7036.2984, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.Gauges.1.0.0\lib\Zeroit.Framework.Gauges.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.LineSeparators, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.LineSeparators.1.0.0\lib\Zeroit.Framework.LineSeparators.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.ListView, Version=1.0.7152.14415, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.ListView.1.0.0\lib\Zeroit.Framework.ListView.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.MaterialDesign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.MaterialDesign.1.0.0\lib\Zeroit.Framework.MaterialDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.MaterialWinforms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.MaterialWinforms.1.0.0\lib\Zeroit.Framework.MaterialWinforms.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.Metro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.Metro.1.0.0\lib\Zeroit.Framework.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.MiscControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.MiscControls.1.0.0\lib\Zeroit.Framework.MiscControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.PictureBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.PictureBox.1.0.0\lib\Zeroit.Framework.PictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.PolygonCreator, Version=1.0.7033.22505, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.PolygonCreator.1.0.0\lib\Zeroit.Framework.PolygonCreator.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.Progress, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.Progress.1.0.0\lib\Zeroit.Framework.Progress.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.ProgressThematic, Version=1.0.7033.24186, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.ProgressThematic.1.0.0\lib\Zeroit.Framework.ProgressThematic.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.RadioThematic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.RadioThematic.1.0.0\lib\Zeroit.Framework.RadioThematic.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.SwitchThematic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.SwitchThematic.1.0.0\lib\Zeroit.Framework.SwitchThematic.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.Tooltip, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.Tooltip.1.0.0\lib\Zeroit.Framework.Tooltip.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.Transitions, Version=1.0.7153.15006, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.Transitions.1.0.2\lib\Zeroit.Framework.Transitions.dll</HintPath>
+    </Reference>
+    <Reference Include="Zeroit.Framework.UIThemes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.UIThemes.1.0.0\lib\Zeroit.Framework.UIThemes.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Codedom.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetIcon.vb" />
+    <Compile Include="Methods.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Stub.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1_DvxOW-53r9rT2ImLqsz2uw.ico" />
+    <None Include="Resources\1_DvxOW-53r9rT2ImLqsz2uw.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
